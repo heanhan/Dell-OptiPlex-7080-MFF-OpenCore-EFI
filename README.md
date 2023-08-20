@@ -55,27 +55,27 @@
 
 ## BIOS主板设置【dell主机必须进行cfg-lock和DVMT的解锁，我手里的这台标压版本的bios版本不解锁 无法进入引导，！！！工具已经提供，使用前必须解锁】
 
-|Settings|Value|
-|----|---|
-|System Configuration → Integrated NIC | Enabled |
-|System Configuration → SATA Operation | AHCI |
-|Security → PTM 2.0  （必须关掉，不然影响睡眠） | Disabled |
-|Secure Boot → Secure Boot Enable | Disabled |
-|Secure Boot → Secure Boot Mode | Audit Mode |
-|Intel SGE → SGX | Disabled |
-|Performance → Intel SpeedStep | Enabled |
-|Performance → C-States Control | Enabled |
-|Performance → Turboost | Enabled |
-|Performance → HyperThread Control | Enabled |
-|Power Management → Intel Speed Shift Technology | Enabled |
-|Power Management → Deep Sleep Control | Disabled |
-|Power Management → USB Wake Support | Disabled |
-|Power Management → Wake on LAN/WLAN | Lan only |
-|Power Management → Block Sleep | Disabled |
-|POST Behavior → Fastboot | Minimal |
-|Virtualization Support → Virtualization | Enabled |
-|Virtualization Support → VT For Direct I/O | Disabled |
-|Advanced configurations → ASPM | Auto |
+| Settings                                        |Value|
+|-------------------------------------------------|---|
+| System Configuration → Integrated NIC           | Enabled |
+| System Configuration → SATA Operation           | AHCI |
+| Security → TPM 2.0  （必须关掉，不然影响睡眠）               | Disabled |
+| Secure Boot → Secure Boot Enable                | Disabled |
+| Secure Boot → Secure Boot Mode                  | Audit Mode |
+| Intel SGE → SGX                                 | Disabled |
+| Performance → Intel SpeedStep                   | Enabled |
+| Performance → C-States Control                  | Enabled |
+| Performance → Turboost                          | Enabled |
+| Performance → HyperThread Control               | Enabled |
+| Power Management → Intel Speed Shift Technology | Enabled |
+| Power Management → Deep Sleep Control           | Disabled |
+| Power Management → USB Wake Support             | Disabled |
+| Power Management → Wake on LAN/WLAN             | Lan only |
+| Power Management → Block Sleep                  | Disabled |
+| POST Behavior → Fastboot                        | Minimal |
+| Virtualization Support → Virtualization         | Enabled |
+| Virtualization Support → VT For Direct I/O      | Disabled |
+| Advanced configurations → ASPM                  | Auto |
 
 ## 修改DVMT和CFG LOCK的值 提供参考，
 * 无法使用Grub Setup_var 需要用到Ru.efi 将Ru.efi在BIOS中添加进Boot Menus 后启动 进入Ru后按 "Alt" + "=" 并
