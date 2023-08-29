@@ -265,24 +265,6 @@
                     <key>Arch</key>
                     <string>x86_64</string>
                     <key>BundlePath</key>
-                    <string>AppleALC.kext</string>
-                    <key>Comment</key>
-                    <string>V1.8.4</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/AppleALC</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>x86_64</string>
-                    <key>BundlePath</key>
                     <string>WhateverGreen.kext</string>
                     <key>Comment</key>
                     <string>V1.6.6</string>
@@ -326,6 +308,42 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/SMCProcessor</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>Any</string>
+                    <key>BundlePath</key>
+                    <string>SMCSuperIO.kext</string>
+                    <key>Comment</key>
+                    <string>V1.3.2</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/SMCSuperIO</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>BundlePath</key>
+                    <string>AppleALC.kext</string>
+                    <key>Comment</key>
+                    <string>V1.8.4</string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AppleALC</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -464,7 +482,7 @@
                 <key>PanicNoKextDump</key>
                 <false/>
                 <key>PowerTimeoutKernelPanic</key>
-                <false/>
+                <true/>
                 <key>ProvideCurrentCpuInfo</key>
                 <false/>
                 <key>SetApfsTrimTimeout</key>
@@ -509,7 +527,7 @@
                 <key>PickerAttributes</key>
                 <integer>1</integer>
                 <key>PickerAudioAssist</key>
-                <false/>
+                <true/>
                 <key>PickerMode</key>
                 <string>External</string>
                 <key>PickerVariant</key>
@@ -517,7 +535,7 @@
                 <key>PollAppleHotKeys</key>
                 <false/>
                 <key>ShowPicker</key>
-                <true/>
+                <false/>
                 <key>TakeoffDelay</key>
                 <integer>0</integer>
                 <key>Timeout</key>
@@ -789,13 +807,13 @@
                 <key>AdviseFeatures</key>
                 <false/>
                 <key>MLB</key>
-                <string>C02219270GUPHC18C</string>
+                <string>C02021200GUPHC11F</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
                 <integer>0</integer>
                 <key>ROM</key>
-                <data>JYsK1kOk</data>
+                <data>2Kp/igvr</data>
                 <key>SpoofVendor</key>
                 <false/>
                 <key>SystemMemoryStatus</key>
@@ -803,9 +821,9 @@
                 <key>SystemProductName</key>
                 <string>iMac20,1</string>
                 <key>SystemSerialNumber</key>
-                <string>C02HPQYEPN5T</string>
+                <string>C02CR0JEPN5T</string>
                 <key>SystemUUID</key>
-                <string>82D721E6-A989-4B1A-8F8F-458F4928BBC3</string>
+                <string>510D69D5-3E62-4F78-87A8-F1519A8CA0D2</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
@@ -873,7 +891,7 @@
                 <key>AudioOutMask</key>
                 <integer>1</integer>
                 <key>AudioSupport</key>
-                <false/>
+                <true/>
                 <key>DisconnectHda</key>
                 <false/>
                 <key>MaximumGain</key>
@@ -928,6 +946,30 @@
                     <false/>
                     <key>Path</key>
                     <string>OpenRuntime.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>ResetNvramEntry.efi</string>
+                </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>LoadEarly</key>
+                    <false/>
+                    <key>Path</key>
+                    <string>ToggleSipEntry.efi</string>
                 </dict>
             </array>
             <key>Input</key>
@@ -1046,7 +1088,7 @@
                 <key>ForgeUefiSupport</key>
                 <false/>
                 <key>IgnoreInvalidFlexRatio</key>
-                <false/>
+                <true/>
                 <key>ReleaseUsbOwnership</key>
                 <false/>
                 <key>ReloadOptionRoms</key>
