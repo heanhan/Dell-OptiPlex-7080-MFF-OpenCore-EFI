@@ -1,6 +1,6 @@
 # OpenCore on Dell OptiPlex 7080 MFF
 
-> 1、OpenCore 0.94 for macOS Ventura (13.5.1) on Dell OptiPlex 7080 MFF
+> 1、OpenCore 0.94 for macOS Ventura (13.6) on Dell OptiPlex 7080 MFF
 >
 > 2、使用本分支里的EFI首先 要生成自己的五码，我已经EFI里的改了，为了不和我现在使用的序列号冲突
 >
@@ -13,7 +13,7 @@
 > 目前当成主机里使用，只安装了单系统MacOS 13 Ventura，系统使用Monterey升级过来,OpenCore 使用的是0.9.4最近的引导。
 
 -   Dell OptiPlex 7080 MFF 【标压版本，180W电源】
--   CPU: Intel Comet Lake i5-10400
+-   CPU: Intel Comet Lake i7-10700
 -   主板型号t: Intel Q470
 -   内存条: 16G DDR4 3200 \* 2
 -   iGPU: UHD 630
