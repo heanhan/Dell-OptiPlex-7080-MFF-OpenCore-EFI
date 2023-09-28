@@ -27,7 +27,7 @@
 ### @界面效果
 
 1、关于本机
-![dell.png](./images/dell.png)
+(./images/dell.png)
 
 ### @ 常工作的硬件功能 (使用 BCM94360CS2白果卡)
 
