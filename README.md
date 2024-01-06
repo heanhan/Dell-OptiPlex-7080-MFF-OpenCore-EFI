@@ -1,12 +1,12 @@
 # OpenCore on Dell OptiPlex 7080 MFF
 
-> 1、OpenCore版本： 0.95 
+> 1、OpenCore版本： 0.97
 >
-> 2、MacOS： Ventura (13.6) on Dell OptiPlex 7080 MFF
+> 2、MacOS： Ventura (13.6.1) on Dell OptiPlex 7080 MFF
 >
 > 2、使用本分支里的EFI首先 要生成自己的五码，我已经EFI里的改了，为了不和我现在使用的序列号冲突
 >
-> 3、目前仿冒的mac机型我选择是: iMac20,1
+> 3、目前仿冒的mac机型我选择是: macmini8,1   【本地调整了机型，在这个机型cpu的频率调度看起来比较好一下】
 >
 > 4、bios的主板版本我已经1.1.5 升级到 1.20.1 版本【官网最新驱动时间：2023-06-23 】，解决了7080mff小主机的风扇忽大忽小的问题。最新版本1.2.1 的bios,目前能做到稍微智能点，工作40——60摄氏度之间的转速自动维持在1800～2800左右了，一天几乎都很安静了，持续观察中。。。
 
@@ -17,10 +17,10 @@
 -   主板型号: Intel Q470
 -   内存条: 16G DDR4 3200 \* 2
 -   iGPU: UHD 630
--   硬盘: 致钛Tiplus5000 512GB
+-   硬盘:  固态- S690MQ 【2023-11-03 原因：主控芯片群联，兼容想好一下，速度有提升】
 -   声卡: ALC256
 -   千兆有线网卡: Intel I219-LM7
--   无线网卡  BCM94360CS2 
+-   无线网卡  BCM94360CS2+反向转接卡
 ### @界面效果
 
 1、关于黑苹果的信息
@@ -29,7 +29,7 @@
 ### @ 常工作的硬件功能 (使用 BCM94360CS2白果卡)
 
 -   HWP
--   睡眠【当前版本已经修复正常】、隔空、随行等正常使用
+-   睡眠、隔空、随行等正常使用
 -   iGPU with HiDPI
 -   千兆有线网卡
 -   wifi无线网正常使用
@@ -50,7 +50,7 @@
 |-------------------------------------------------|---|
 | System Configuration → Integrated NIC           | Enabled |
 | System Configuration → SATA Operation           | AHCI |
-| Security → TPM 2.0  （必须关掉，不然影响睡眠）               | Disabled |
+| Security → TPM 2.0  （必须关掉，不然影响睡眠，导致睡眠秒醒）       | Disabled |
 | Secure Boot → Secure Boot Enable                | Disabled |
 | Secure Boot → Secure Boot Mode                  | Audit Mode |
 | Intel SGE → SGX                                 | Disabled |
@@ -70,6 +70,6 @@
 
 ## 修改DVMT和CFG LOCK的值 提供参考，
 * 无法使用Grub Setup_var 需要用到Ru.efi 将Ru.efi在BIOS中添加进Boot Menus 后启动 进入Ru后按 "Alt" + "=" 并
-查找 **CPUSetup** 和 **SaSetup**
+  查找 **CPUSetup** 和 **SaSetup**
 * 解锁"CFG-LOCK" 找到CPUSetup 将横排 "0030" "0E" 位改为 00 按 Ctrl + W 保存
 * 修改DVMT 搜索 SaSetup 将横排 "00F0" "05" 位改为 "02" 按 Ctrl + W 保存
