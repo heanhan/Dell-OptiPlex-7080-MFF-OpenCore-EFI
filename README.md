@@ -2,7 +2,7 @@
 
 > 1、OpenCore版本： 0.97
 >
-> 2、MacOS： Ventura (13.6.1) on Dell OptiPlex 7080 MFF
+> 2、MacOS： Ventura (13.6.3) on Dell OptiPlex 7080 MFF
 >
 > 2、使用本分支里的EFI首先 要生成自己的五码，我已经EFI里的改了，为了不和我现在使用的序列号冲突
 >
