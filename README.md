@@ -1,12 +1,12 @@
 # OpenCore on Dell OptiPlex 7080 MFF
 
-> 1、OpenCore版本： 0.98 常规升级，【本机重新定制一遍USB驱动】
+> 1、OpenCore版本： 0.99 常规升级
 >
-> 2、MacOS： Ventura (13.6.4) on Dell OptiPlex 7080 MFF
+> 2、MacOS： Ventura (13.6.6) on Dell OptiPlex 7080 MFF
 >
 > 2、使用本分支里的EFI首先 要生成自己的五码，我已经EFI里的改了，为了不和我现在使用的序列号冲突
 >
-> 3、目前仿冒的mac机型我选择是: macmini8,1   【本地调整了机型，在这个机型cpu的频率调度看起来比较好一下】
+> 3、目前仿冒的mac机型我选择是: iMac 20,1
 >
 > 4、~~bios的主板版本我已经1.1.5 升级到 1.20.1 版本【官网最新驱动时间：2023-06-23 】，为了散热使用 Macs fan control 软件，将风扇转速2700转，噪音和散热稍微平衡些。~~  注释掉了，因为dell 放在公司已经使用 Macs Fan Control软件控制设置全速转了【3300转】，使得cpu的温度即使高负载 温度在60℃左右。为了不降频，已经忽略了风扇的吵闹。
 >

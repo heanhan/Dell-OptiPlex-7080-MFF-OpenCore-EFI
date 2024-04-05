@@ -1172,23 +1172,23 @@
                 <key>AdviseFeatures</key>
                 <false/>
                 <key>MLB</key>
-                <string>C078114054NKXPGAD</string>
+                <string>C02244609GUPHC1FB</string>
                 <key>MaxBIOSVersion</key>
                 <false/>
                 <key>ProcessorType</key>
                 <integer>0</integer>
                 <key>ROM</key>
-                <data>jg8kaYXt</data>
+                <data>FC/goiVD</data>
                 <key>SpoofVendor</key>
                 <false/>
                 <key>SystemMemoryStatus</key>
                 <string>Auto</string>
                 <key>SystemProductName</key>
-                <string>Macmini8,1</string>
+                <string>iMac20,1</string>
                 <key>SystemSerialNumber</key>
-                <string>C07WFFYSJYVX</string>
+                <string>C02JM0WNPN5T</string>
                 <key>SystemUUID</key>
-                <string>2FADDE6A-E040-44C5-9EF0-A45604990EFF</string>
+                <string>3E377946-7B5D-4D53-B890-BB29EB96B826</string>
             </dict>
             <key>UpdateDataHub</key>
             <true/>
